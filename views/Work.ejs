@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Smart Ophtho - WORK </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/graphicloads/medical-health/256/eye-icon.png"/>
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/gijgo.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+        
+            .imgbox {
+                display: grid;
+                height: 100%;
+            }
+        
+            .center-fit {
+                max-width: 100%;
+                max-height: 100vh;
+                margin: auto;
+            }
+            * {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #ffffff
+}
+
+.card1 {
+    height: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.card1:hover {
+    transform: scale(1.1)
+}
+
+.card2 {
+    height: 400px;
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.5s
+}
+
+.card2:hover {
+    transform: scale(1.1)
+}
+
+.login {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px
+}
+
+.input-field span {
+    font-size: 12px;
+    color: #cecdcd;
+    margin-left: 10px
+}
+
+.form-control {
+    font-size: 13px;
+    color: #767473;
+    font-weight: 500;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #9b9b9b;
+    box-shadow: none
+}
+
+.btn {
+    height: 35px;
+    width: 100%;
+    background-color: #000;
+    font-weight: 500;
+    color: #cdcdc4;
+    border: none;
+    font-size: 15px
+}
+
+.text1 .forget {
+    color: #767676;
+    font-weight: 500
+}
+
+.text2 span {
+    font-weight: 5;
+    color: #7a7778
+}
+
+.text2 .register {
+    color: #4f4942;
+    font-weight: bold
+}
+
+.drag-area{
+  border: 2px dashed rgb(0, 0, 0);
+  height: 70px;
+  width: 270px;
+  margin-bottom: 130px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 1px solid #fff;
+}
+
+.drag-area button{
+  padding: 2px 3px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+    
+    <%-include('Header') %>
+    
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12" style="margin-top: 50px;">
+                    <div class="bradcam_text">
+                        <h3>SIMPLE TO USE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bradcam_area  -->
+    <!-- prising_area  -->
+    <div class="prising_area minus_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+
+                        <!--/ prising_area  -->
+                        <!--/ about  -->
+                        <h3> THE EYE CARE NEEDS OF LIFE FOR EVERYONE </h3>
+                        <h1> HEALTH ANALYSIS TOOL </h1>
+                       
+                        <div class="imgbox">
+                            <img id="selected-image" class="center-fit" src="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5" style="margin-bottom: 90;">
+        <div class="d-flex flex row g-0">
+            <div class="col-md-6 mt-3">
+                <div class="card card1 p-3">
+                    <div class="d-flex flex-column"> <img src="https://image.flaticon.com/icons/png/512/685/685686.png" height="50" width="50" /> <span class="login mt-3">Upload atleast 5 images </span> </div>
+                <form action="/uploadfile" method="POST" enctype="multipart/form-data">
+                    <input name="F1" required style = "padding: 10px;padding-left: 0%;" id="image-selector" type="file" accept="image/*" capture="camera" >
+                    <input name="F2" style = "padding: 10px;padding-left: 0%;" id="image-selector" type="file" accept="image/*" capture="camera">
+                    <input name="F3" style = "padding: 10px;padding-left: 0%;" id="image-selector" type="file" accept="image/*" capture="camera">
+                    <input name="F4" style = "padding: 10px;padding-left: 0%;" id="image-selector" type="file" accept="image/*" capture="camera">
+                    <input name="F5" style = "padding: 10px;padding-left: 0%;" id="image-selector" type="file" accept="image/*" capture="camera">
+
+                    <button class="btn btn-primary btn-lg" id="predict-button">SUBMIT</button>
+                </form>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="card card2 p-3">
+                    <div class="image"> <img src="img/form image.jpg"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+                
+    <%-include('footer') %>
+
+</body>
+
+</html>
