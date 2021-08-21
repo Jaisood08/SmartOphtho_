@@ -22,5 +22,5 @@ lr = 0.0004
 
 Model Layers :  
 
-
+![Layers](https://github.com/Jaisood08/SmartOphtho_/blob/master/Model%20Layers.jpg)
 
