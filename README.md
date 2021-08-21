@@ -15,6 +15,9 @@ Chart:
 FlowChart:
 ![Flow](https://github.com/Jaisood08/SmartOphtho_/blob/master/FLOWCHART-01-01.jpg)
 
+
+__MODEL INFORMATION__  
+
 Parameters :
 
 img_width, img_height = 150, 150  
