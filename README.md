@@ -6,6 +6,15 @@ diseases at preliminary stages.
 
 Link: https://smartophtho.herokuapp.com/
 
+Product:  
+![Product](https://github.com/Jaisood08/SmartOphtho_/blob/master/draw.png)
+
+Chart:
+![Qualities](https://github.com/Jaisood08/SmartOphtho_/blob/master/FTRUS-01.png)
+
+FlowChart:
+![Flow](https://github.com/Jaisood08/SmartOphtho_/blob/master/FLOWCHART-01-01.jpg)
+
 Parameters :
 
 img_width, img_height = 150, 150  
